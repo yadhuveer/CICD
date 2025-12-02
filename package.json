@@ -10,7 +10,7 @@
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
     "format": "prettier --write .",
-    "prepare": "if [ \"$HUSKY\" != \"0\" ]; then husky install; fi"
+    "prepare": "node -e \"if(process.env.HUSKY !== '0'){require('husky').install()}\""
   },
   "lint-staged": {
     "*.{ts,tsx}": [
