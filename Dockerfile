@@ -27,8 +27,7 @@ WORKDIR /app
 # Copy package files for production install
 COPY package.json package-lock.json ./
 
-# 🔥 Prevent Husky from running in production build
-ENV HUSKY=0
+
 
 # Install production-only dependencies
 RUN npm ci --production

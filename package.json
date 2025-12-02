@@ -9,8 +9,7 @@
     "start": "node dist/server.js",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
-    "format": "prettier --write .",
-    "prepare": "node -e \"if(process.env.HUSKY !== '0'){require('husky').install()}\""
+    "format": "prettier --write ."
   },
   "lint-staged": {
     "*.{ts,tsx}": [
@@ -76,7 +75,6 @@
     "eslint": "^9.37.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
-    "husky": "^9.1.7",
     "lint-staged": "^16.2.3",
     "prettier": "^3.6.2",
     "tsx": "^4.19.2",
