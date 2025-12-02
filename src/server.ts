@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3000;
 connectDB()
   .then(() => {
     app.listen(PORT, () => {
-      logger.info(`🚀 Server running on http://localhost:${PORT}`);
+      logger.info(`Server running on http://localhost:${PORT}`);
     });
 
     // Initialize cron jobs after successful database connection
